@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     margin: 0px;
     overflow: hidden;
     background-color: #121212;
     --primary-color: #121212;
-    --secondary-color: rgba(255, 255, 255, .04);
-    --accent-color: #A2D2DF;
-    --font-color: #EEEEEE;
+    --secondary-color: rgba(255, 255, 255, 0.04);
+    --accent-color: #a2d2df;
+    --font-color: #eeeeee;
+    --Hover-color: #303030;
 }
 
 .Main-Bkgrnd {
@@ -27,13 +28,13 @@ body {
 
 .Profile-Pic {
     padding-top: 10%;
-    margin:auto;
+    margin: auto;
     width: 125px;
     height: 125px;
     border-radius: 100%;
 }
 
-img{
+.Profile-Pic img {
     border-radius: 100%;
     width: 125px;
     height: 125px;
@@ -44,43 +45,70 @@ img{
     justify-content: center;
     height: 3rem;
     color: var(--font-color);
-    font-size: 20px;
+    font-size: 1.3rem;
 }
+
 .SidebarTabs {
     display: flex;
     flex-direction: column;
-    row-gap: 3%;
+    row-gap: 4%;
     justify-self: center;
     width: 70%;
     height: 70vh;
     background-color: rgba(255, 0, 0, 0);
 }
 
+.SidebarTabs img {
+    margin-left: 4%;
+    height: 20px;
+    width: 20px;
+    filter: grayscale(1) invert(1);
+}
+
 .Tabs {
+    align-items: center;
+    gap: 6%;
+    display: flex;
     width: 100%;
-    height: 12%;
+    height: 10%;
     border-radius: 10px;
-    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .Tabs p {
-    margin: 12% 0 0 5%;
+    font-size: 1.3rem;
+    text-align: left;
+}
+#Tab1 {
+    margin-top: 10%;
 }
 
-#Tab1{
-    background-color: rgb(216, 75, 75);
+#Tab1:hover {
+    background-color: var(--Hover-color);
+    border: 1px solid rgb(70, 70, 70);
 }
-#Tab2{
-    background-color: rgb(216, 113, 75);
+#Tab2:hover {
+    background-color: var(--Hover-color);
+    border: 1px solid rgb(70, 70, 70);
 }
-#Tab3{
-    background-color: rgb(216, 143, 75);
+#Tab3:hover {
+    background-color: var(--Hover-color);
+    border: 1px solid rgb(70, 70, 70);
 }
-#Tab4{
-    background-color: rgb(216, 202, 75);
+#Tab4:hover {
+    background-color: var(--Hover-color);
+    border: 1px solid rgb(70, 70, 70);
 }
-#Tab5{
-    background-color: rgb(164, 216, 75);
+#Tab5:hover {
+    background-color: var(--Hover-color);
+    border: 1px solid rgb(70, 70, 70);
+}
+#Tab6:hover {
+    background-color: var(--Hover-color);
+    border: 1px solid rgb(70, 70, 70);
 }
 
 .Main-Container {
@@ -93,41 +121,38 @@ img{
     width: 78.5%;
     height: 94vh;
     margin: auto 0;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 .Top-Container {
+    height: 29%;
     margin: 0;
     padding: 0;
 }
 
 #Top1 {
-    height: 30%;
     width: 40%;
     background-color: rgb(83, 151, 151);
 }
 
 #Top2 {
     margin-left: 2.5%;
-    height: 30%;
+
     width: 52.5%;
     background-color: rgb(83, 123, 151);
 }
 
 #Middle3 {
-    height: 250px;
-    width: 1275px;
+    width: 95%;
     background-color: rgb(83, 84, 151);
 }
 
 #Bottom4 {
-    height: 30%;
     width: 40%;
     background-color: rgb(114, 83, 151);
 }
 #Bottom5 {
     margin-left: 2.5%;
-    height: 30%;
     width: 52.5%;
     background-color: rgb(111, 21, 133);
 }
