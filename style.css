@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    margin: 0px;
+    overflow: hidden;
+    background-color: #121212;
+    --primary-color: #121212;
+    --secondary-color: rgba(255, 255, 255, .04);
+    --accent-color: #A2D2DF;
+    --font-color: #EEEEEE;
+}
+
+.Main-Bkgrnd {
+    display: inline-flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.SideBar {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(53, 131, 186, 0);
+    z-index: 2;
+}
+
+.Profile-Pic {
+    padding-top: 10%;
+    margin:auto;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+}
+
+img{
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+}
+
+.Profile-Name {
+    text-align: center;
+    justify-content: center;
+    height: 3rem;
+    color: var(--font-color);
+    font-size: 20px;
+}
+.SidebarTabs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3%;
+    justify-self: center;
+    width: 70%;
+    height: 70vh;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.Tabs {
+    width: 100%;
+    height: 12%;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.Tabs p {
+    margin: 12% 0 0 5%;
+}
+
+#Tab1{
+    background-color: rgb(216, 75, 75);
+}
+#Tab2{
+    background-color: rgb(216, 113, 75);
+}
+#Tab3{
+    background-color: rgb(216, 143, 75);
+}
+#Tab4{
+    background-color: rgb(216, 202, 75);
+}
+#Tab5{
+    background-color: rgb(164, 216, 75);
+}
+
+.Main-Container {
+    position: relative;
+    row-gap: 3.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 78.5%;
+    height: 94vh;
+    margin: auto 0;
+    background-color:var(--primary-color);
+}
+
+.Top-Container {
+    margin: 0;
+    padding: 0;
+}
+
+#Top1 {
+    height: 30%;
+    width: 40%;
+    background-color: rgb(83, 151, 151);
+}
+
+#Top2 {
+    margin-left: 2.5%;
+    height: 30%;
+    width: 52.5%;
+    background-color: rgb(83, 123, 151);
+}
+
+#Middle3 {
+    height: 250px;
+    width: 1275px;
+    background-color: rgb(83, 84, 151);
+}
+
+#Bottom4 {
+    height: 30%;
+    width: 40%;
+    background-color: rgb(114, 83, 151);
+}
+#Bottom5 {
+    margin-left: 2.5%;
+    height: 30%;
+    width: 52.5%;
+    background-color: rgb(111, 21, 133);
+}
